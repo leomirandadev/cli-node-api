@@ -1,23 +1,33 @@
-# CLI para projetos de API com Node.js
+# cli-node-api CLI
 
-## Instalação gluegun
-```
-sudo yarn global add gluegun
+A CLI for cli-node-api.
+
+## Customizing your CLI
+
+Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
+
+## Publishing to NPM
+
+To package your CLI up for NPM, do this:
+
+```shell
+$ npm login
+$ npm whoami
+$ npm lint
+$ npm test
+(if typescript, run `npm run build` here)
+$ npm publish
 ```
 
-## Criação de uma CLI
-```
-gluegun new nome-cli
-```
+# License
 
-## Tornando sua CLI um comando do terminal
-```
-sudo yarn link
-```
+MIT - see LICENSE
 
-----
 
-# Libs Utilizadas para API
+---
+
+
+# Libs Utilizadas para API gerada
 - ``Express`` : Responsável pela lib http;
 - ``Sequelize`` : ORM;
 - ``YUP`` : Responsável verificação de dados;
