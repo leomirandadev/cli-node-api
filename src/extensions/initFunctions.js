@@ -40,7 +40,7 @@ module.exports = (toolbox) => {
 
   async function configNodemonSucrase(template, project, patching) {
     template.generate({
-      template: 'nodemonConfig.json.ejs',
+      template: 'nodemon.json.ejs',
       target: `${project}/nodemon.json`,
     })
   

@@ -10,7 +10,7 @@ module.exports = (toolbox) => {
   async function createConfigDb(template, project, dbInformation) {
     const { dialect, host, username, password, database} = dbInformation;
     template.generate({
-      template: 'database.js.ejs',
+      template: 'srcConfigDatabase.js.ejs',
       target: `${project}/src/config/database.js`,
       props: { dialect, host, username, password, database }
     })
