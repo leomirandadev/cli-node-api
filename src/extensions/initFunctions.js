@@ -6,7 +6,7 @@ module.exports = (toolbox) => {
 
   async function installDependences(system, project,) {
     return system.run(
-      `cd ${project} && yarn add express`,
+      `cd ${project} && yarn add express jsonwebtoken bcryptjs yup`,
     { trim: true })
   }
   toolbox.installDependences = installDependences;
