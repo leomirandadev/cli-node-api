@@ -1,39 +1,30 @@
 # cli-node-api CLI
 
-A CLI for cli-node-api.
-
-## Customizing your CLI
-
-Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
-
-## Publishing to NPM
-
-To package your CLI up for NPM, do this:
-
+## How to use 
+**For create a new api project**
 ```shell
-$ npm login
-$ npm whoami
-$ npm lint
-$ npm test
-(if typescript, run `npm run build` here)
-$ npm publish
+$ cli-node-api init nameProject
 ```
 
-# License
+If you want to set a database comunication, add --db after the project name, like:
 
-MIT - see LICENSE
-
-
+```shell
+$ cli-node-api init nameProject --db
+```
 ---
 
 
-# Libs Utilizadas para API gerada
-- ``Express`` : Responsável pela lib http;
-- ``Sequelize`` : ORM;
-- ``YUP`` : Responsável verificação de dados;
-- ``BCryptJs`` : Responsável critografia;
-- ``JsonWebToken`` : Responsável pela geração de webtoken para permissão de usuários para a utilização de algumas áreas da API;
-### Dependencias de desenvolvimento
-- ``Nodemon`` : Responsável por fornecer levantar o servidor e manter atualizado conforme o código vai alterando;
-- ``Sucrase`` : Responsável por disponibilizar o 'import' e o 'export default' com o padrão ES6+
-- ``Sequelize-cli`` : Interface de linha de comando utilizado junto com a lib sequelize para geração de migrations,
+# Libs Default to API
+- ``Express``;
+- ``YUP``;
+- ``BCryptJs``;
+- ``JsonWebToken``
+### ``Dev dependences``
+- ``Nodemon``;
+- ``Sucrase``;
+
+
+# Libs include to database
+- ``Sequelize``;
+### ``Dev dependences``
+- ``Sequelize-cli``;
