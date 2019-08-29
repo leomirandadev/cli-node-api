@@ -30,7 +30,7 @@ module.exports = {
 
       if (dbInformation != null) {
         info('Installing sequelize...');
-        info( await setSequelizeDependence(system, nameProject) );
+        info( await setSequelizeDependence(system, nameProject, template) );
 
         info('Creating database configuration...');
         await createConfigDb(template, nameProject, dbInformation);

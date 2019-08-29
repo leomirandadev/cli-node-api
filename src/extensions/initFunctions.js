@@ -32,7 +32,7 @@ module.exports = (toolbox) => {
       target: `${project}/src/routes.js`,
     })
     template.generate({
-      template: 'gitIgnore.js.ejs',
+      template: 'gitIgnore.ejs',
       target: `${project}/.gitignore`,
     })
   }
