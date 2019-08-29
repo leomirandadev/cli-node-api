@@ -1,5 +1,23 @@
-# CLI com Node.js
-Libs Utilizadas para API
+# CLI para projetos de API com Node.js
+
+## Instalação gluegun
+```
+sudo yarn global add gluegun
+```
+
+## Criação de uma CLI
+```
+gluegun new nome-cli
+```
+
+## Tornando sua CLI um comando do terminal
+```
+sudo yarn link
+```
+
+----
+
+# Libs Utilizadas para API
 - ``Express`` : Responsável pela lib http;
 - ``Sequelize`` : ORM;
 - ``YUP`` : Responsável verificação de dados;
