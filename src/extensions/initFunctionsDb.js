@@ -1,3 +1,5 @@
+const crypto = require('crypto');
+
 module.exports = (toolbox) => {
   
   async function setSequelizeDependence(system, project,template) {
@@ -17,6 +19,11 @@ module.exports = (toolbox) => {
       template: 'srcConfigDatabase.js.ejs',
       target: `${project}/src/config/database.js`,
       props: { dialect, host, username, password, database }
+    })
+    template.generate({
+      template: 'srcConfigAuth.js.ejs',
+      target: `${project}/src/config/auth.js`,
+      props: { token: crypto.randomBytes(32).toString('hex') }
     })
   }
   toolbox.createConfigDb = createConfigDb;
