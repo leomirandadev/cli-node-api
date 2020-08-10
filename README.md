@@ -1,6 +1,10 @@
 # cli-node-api CLI
 
 ## How to use 
+**Install cli with:**
+```shell
+$ yarn link
+```
 **For create a new api project**
 ```shell
 $ cli-node-api init nameProject
